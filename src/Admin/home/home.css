@@ -1,0 +1,182 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+.adhcards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    margin: 5rem auto;
+  }
+  
+  .adhcards .red {
+    background-color: #f43f5e;
+  }
+  
+  .adhcards .blue {
+    background-color: #3b82f6;
+  }
+  
+  .adhcards .green {
+    background-color: #22c55e;
+  }
+  
+  .adhcards .adhcard1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 150px;
+    width: 280px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms transform, 400ms box-shadow, 400ms background-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .adhcards .adhcard1 p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .adhcards .adhcard1 p.second-text {
+    font-size: 0.7em;
+  }
+  
+  .adhcards .adhcard1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #333;
+  }
+  
+  .adhcards:hover > .adhcard1:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+.p {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.manage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    margin: 5rem auto;
+}
+
+.hr {
+    margin: 1rem auto;
+    color: rgb(137, 107, 172);
+    border: 0;
+    border-top: 5px solid;
+    border-radius: 4px;
+    width: 50%;
+}
+
+.hr1 {
+    margin: 2px auto;
+    color: rgb(171, 174, 177);
+    border-top: 3px solid;
+}
+
+.adhcard {
+    width: 25%;
+    height: 254px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #333;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: all 0.7s ease-in-out;
+    overflow: hidden;
+}
+
+.adhcard::before {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background-color: #b858c5;
+    bottom: 0;
+    right: 0;
+    transform: translateY(70px);
+    border-radius: 100%;
+    transition: all 0.7s ease-in-out;
+}
+
+.c-txt {
+    z-index: 2;
+    color: #333;
+    font-size: 12px;
+}
+.adhcard h5{
+    z-index: 2;
+}
+.adhcard button{
+    z-index: 2;
+    border: 2px solid rgb(73, 73, 73)
+}
+.adhcard button:hover{
+    z-index: 2;
+    color: #f3f3f3;
+    border: 2px solid rgb(248, 246, 246)
+}
+.adhcard i:hover{
+    color: #f3f3f3;
+}
+.adhcard:hover::before {
+    transform: scale(7) translate(-20px);
+}
+
+.adhcard:hover {
+    box-shadow: 1px -10px 500px 500px #f0bcf73d;
+    color: #f3f3f3;
+}
+
+.title{
+    color: #781985;
+}
+
+
+
+@media (max-width: 767px) {
+    .col-lg-3 {
+        max-width: 100%;
+    }
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .p {
+        font-size: 16px;
+    }
+
+    .adhcard {
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 0;
+}
+
+.headt {
+    margin: 5rem 0 0 1rem;
+    color: #781985;
+    font-size: 25px;
+}
+
+ .log {
+    margin-right: 4%;
+}
+
+.log button {
+    background-color: rgb(252, 128, 3);
+    color: white;
+}
+
+.log button:hover{
+    background-color: #781985;
+    color: white;
+}
+
+.log-main {
+    background: linear-gradient(157deg, rgba(157, 17, 195, 1) 0%, rgba(89, 0, 115, 0.958420868347339) 44%, rgba(41, 0, 84, 1) 100%);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
